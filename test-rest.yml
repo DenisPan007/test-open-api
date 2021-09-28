@@ -1,0 +1,26 @@
+post:
+  operationId: test
+
+  requestBody:
+    description: Параметры 
+    content:
+      application/json:
+        schema:
+          type: object
+          properties:
+           previous:
+            type: string
+            description: Идентификатор 
+
+  responses:
+    '200':
+      description: Получение списка 
+      content:
+        application/json:
+          schema:
+            type: object
+          properties:
+           previous:
+            type: string
+            description: Идентификатор
+    
